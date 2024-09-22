@@ -1,0 +1,5 @@
+CHAPTER 4
+├── Thư mục con 1
+│   └── Tệp 1.txt
+└── Thư mục con 2
+    └── Tệp 2.md
