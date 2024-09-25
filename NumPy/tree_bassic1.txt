@@ -1,6 +1,35 @@
 CHAPTER 4
 NumPy Basics: Arrays and Vectorized Computation
 ├── IMPORT THƯ VIỆN VÀ KHỞI TẠO
-│   └── sử dụng as để rút gọn numpy khi sử dụng
-└── Thư mục con 2
-    └── Tệp 2.md
+│   └── sử dụng as để rút gọn numpy khi sử dụng (np là viết tắt chung cho tất cả ví dụ trong file)
+├── MẢNG 1 VÀ NHIỀU CHIỀU
+│    └── arr.ndim: câu lệnh kiểm tra số chiều của 1 mảng
+│    └── arr.shape: câu lệnh kiểm tra hình dạng của mảng
+│    └── arr.dtype: câu lệnh kiểm tra kiểu dữ liệu của mảng
+├── CÁC HÀM HỖ TRỢ TẠO MẢNG NHANH
+│    ├── np.zeros: TẠO RA CÁC GIÁ TRỊ TRONG MẢNG ĐỀU BẰNG 0 
+│    │      └── np.zeros(số lượng phần tử): mảng 1 chiều
+│    │      └── np.zeros((n,n)): mảng 2 chiều
+│    │      └── np.zeros((n,n),dtype=np.int64): kiểu số nguyên
+│    ├── np.ones: TẠO RA CÁC GIÁ TRỊ TRONG MẢNG ĐỀU BẰNG 1
+│    │      └── np.option: tương tự như ones
+│    │      └── np.ones_like(arr): TẠO RA 1 MẢNG CÓ KÍCH THƯỚC VÀ DỮ LIỆU GIỐNG MẢNG CỦ(giá trị tạo ra là 1)
+│    ├── np.empty((n,n,n)): TẠO RA MẢNG ĐA CHIỀU
+│    │      └── np.empty((n,n,n),dtype: kiểu dữ liệu): TẠO RA MẢNG ĐA CHIỀU với kiểu dữ liệu mong muốn
+│    ├── range: CÁCH SỬ DỤNG HÀM RANGE TRONG MỌI TRƯỜNG HỢP
+│    │      └── dùng dưới dạng vòng lặp
+│    │      └── dùng dưới dạng list
+│    │      └── dùng dưới dạng mảng
+│    └── astype: ÉP KIỂU TRONG MẢNG
+├── OPERATIONS BETWEEN ARRAYS AND SCALARS- Các phép toán giữa Mảng và Số vô hướng
+│    └── Cộng, trừ, nhân, chia, lũy thừa (thay đổi từng phần tử trong mảng)
+├── BASIC INDEXING AND SLICING - THAO TÁC MẢNG BẰNG CHỈ MỤC
+│    └── Xử lí giá trị dựa theo chỉ mục được chỉ định
+│    └── Xử lí các giá trị dựa theo đoạn chỉ mục được chỉ định (SLICING)
+├── BOOLEAN INDEXING:LỌC VÀ LẤY RA, THAY ĐỔI các phần tử trong mảng NumPy dựa trên các điều kiện logic
+│    └── Lọc và tạo ra mảng mới từ các giá trị mảng của mảng (giá trị mảng mới được tạo ra dựa trên điều kiện)
+│    └── Kết hợp nhiều điều kiện
+│    └── xử lí với mảng nhiều chiều
+│    └── thay đổi giá trị dựa trên biểu thức điều kiện
+│    └── np.where(condition,x,y): thay đổi giá trị 
+│           └── sử dụng np.isnan(arr) để kiểm tra xem phần tử nào là NaN đối với condition
